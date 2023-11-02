@@ -1,7 +1,30 @@
 .converter__container {
   padding: 0 2rem 0 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   overflow-x: scroll;
   height: 28rem;
+}
+
+.converter__inputs {
+  display: flex;
+  align-items: flex-end;
+}
+
+.converter__input:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  border: none;
+  border-right: 1px solid #000;
+  margin-right: 0.6rem;
+  outline: none;
+  padding: 0.2rem;
 }
