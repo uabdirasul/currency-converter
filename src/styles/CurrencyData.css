@@ -1,0 +1,38 @@
+.currency_data__container {
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  height: 28rem;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #0a146e;
+  justify-content: center;
+}
+
+tr:hover {
+  cursor: pointer;
+  background-color: #0a146e;
+  color: #fff;
+}
+
+td,
+th {
+  width: 7rem;
+  text-align: center;
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+  margin-right: 2rem;
+}

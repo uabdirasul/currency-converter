@@ -1,0 +1,7 @@
+.converter__container {
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  height: 28rem;
+}
