@@ -8,7 +8,7 @@ const CurrencyData = () => {
   const [Currencies, setCurrencies] = useState([]);
   const getCurrencies = async () => {
     const response = await axios.get(
-      "http://data.fixer.io/api/latest?access_key=065b29bd51914b561d1b9ecfaa9e4300"
+      "https://data.fixer.io/api/latest?access_key=065b29bd51914b561d1b9ecfaa9e4300"
     );
 
     setCurrencies(response.data.rates);
