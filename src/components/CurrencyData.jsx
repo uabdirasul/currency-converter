@@ -7,11 +7,17 @@ import "../styles/CurrencyData.css";
 const CurrencyData = () => {
   const [Currencies, setCurrencies] = useState([]);
   const getCurrencies = async () => {
+    const config = {
+      method: "GET",
+      headers: {
+        accept: "application/json",
+      },
+    };
     const response = await axios.get(
-      "http://data.fixer.io/api/latest?access_key=065b29bd51914b561d1b9ecfaa9e4300"
+      "https://api.fastforex.io/fetch-all?api_key=e0cc4fea22-cfb2cf1bf9-s3hq87",
+      config
     );
-
-    setCurrencies(response.data.rates);
+    setCurrencies(response.data.results);
   };
   useEffect(() => {
     getCurrencies();
@@ -24,7 +30,7 @@ const CurrencyData = () => {
           <thead>
             <tr>
               <th>Currency</th>
-              <th>Rate to 1 EUR</th>
+              <th>Rate to 1 UZS</th>
             </tr>
           </thead>
           <tbody>
